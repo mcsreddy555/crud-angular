@@ -1,0 +1,25 @@
+<!-- <p>create works!</p> -->
+<div class="container" style="border:15px solid pink; padding: 10px;" >
+<form #addDetails="ngForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Name" ngModel>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="">Designation</label>
+        <input type="text" class="form-control" name="designation" placeholder="Designation" ngModel>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="">Salary</label>
+      <input type="number" name="salary" class="form-control" id="" placeholder="Salary" ngModel>
+    </div>
+    
+    
+    <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary" (click)="submit(addDetails.value)">Add Details</button>
+    </div>
+  </form>
+</div>
+  
